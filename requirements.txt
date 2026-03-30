@@ -1,0 +1,17 @@
+# ============================================================
+# LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop
+# Dependencies
+# ============================================================
+
+# --- Core Framework ---
+streamlit>=1.30.0              # Web UI framework
+
+# --- Visualization ---
+graphviz>=0.20                 # Pohon inferensi (memerlukan Graphviz system binary)
+
+# --- Testing ---
+pytest>=7.0.0                  # Unit & integration testing
+pytest-cov>=4.0.0              # Code coverage measurement
+
+# --- Code Quality ---
+flake8>=6.0.0                  # PEP 8 linting
