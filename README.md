@@ -1,4 +1,4 @@
-# LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop
+# Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop
 
 Prototype sistem pakar berbasis web yang mendiagnosis kerusakan laptop melalui konsultasi interaktif menggunakan **Backward Chaining** dan **Certainty Factor**.
 
@@ -30,8 +30,11 @@ Prototype sistem pakar berbasis web yang mendiagnosis kerusakan laptop melalui k
 ### 2. Instalasi
 
 ```bash
-# Clone / masuk ke direktori project
-cd "d:\Bismillah Kuliah\Semester 4\Sistem Pakar\Project-Sistem-Pakar"
+# Clone repositori project
+git clone [https://github.com/kukuhagushermawan/project-sistem-pakar.git](https://github.com/kukuhagushermawan/project-sistem-pakar.git)
+
+# Masuk ke direktori project
+cd project-sistem-pakar
 
 # Instal dependencies
 pip install -r requirements.txt
@@ -41,9 +44,9 @@ pip install -r requirements.txt
 
 ```bash
 streamlit run app.py
-```
 
 Buka browser di `http://localhost:8501`.
+```
 
 ### 4. Jalankan Unit Test
 
@@ -148,4 +151,4 @@ Project-Sistem-Pakar/
 
 ---
 
-> LaptopDoc — Proyek Akademik Mata Kuliah Sistem Pakar, Maret 2026
+> Laptop Diagnostic Expert — Projek Akademik Mata Kuliah Sistem Pakar, Maret 2026
