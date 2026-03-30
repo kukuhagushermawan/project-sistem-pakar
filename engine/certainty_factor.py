@@ -3,7 +3,8 @@
 # Kalkulator Certainty Factor — Formula Shortliffe & Buchanan
 #
 # Referensi formula:
-#   CF_combine(CF1, CF2) = CF1 + CF2 × (1 - CF1)
+#   CF_user_kombinasi = min(CF_user1, CF_user2, ..., CF_userN) (karena menggunakan AND)
+#   CF_combine(CF1, CF2) = CF1 + CF2 × (1 - CF1) (jika rule lebih dari 1 untuk kerusakan yang sama)
 #   CF_final = CF_pakar × CF_user_kombinasi
 # ============================================================
 
@@ -38,7 +39,7 @@ def _validate_cf(value: float, name: str = "CF") -> None:
 
 class CertaintyFactor:
     """
-    Kalkulator Certainty Factor untuk Sistem Pakar LaptopDoc.
+    Kalkulator Certainty Factor untuk Sistem Laptop Diagnostic Expert.
 
     Menyediakan method statis untuk:
     - combine_cf(): Kombinasi 2 nilai CF.

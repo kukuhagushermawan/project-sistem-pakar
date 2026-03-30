@@ -3,9 +3,6 @@
 # @module  : visualization.inference_tree
 # @desc    : Visualisasi pohon inferensi Backward Chaining
 #            menggunakan Graphviz (st.graphviz_chart)
-# @author  : Tim Pengembang LaptopDoc
-# @date    : 2026-03-28
-# @version : 1.0.0
 # ============================================================
 
 import streamlit as st
