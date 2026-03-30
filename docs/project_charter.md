@@ -6,57 +6,60 @@
 
 ## 1.0 Informasi Proyek
 
-| Item | Detail |
+Proyek ini dikembangkan oleh kelompok mahasiswa Ilmu Komputer UGM:
+
+| NIM | Nama |
 |---|---|
-| **Nama Proyek** | Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop |
-| **Kode Proyek** | SP-LAPTOP-2026 |
-| **Klien/Lembaga** | Program Studi Teknik Informatika — Mata Kuliah Sistem Pakar |
-| **Jenis Proyek** | Proyek Akademik (Prototype) |
-| **Manajer Proyek** | [Nama Mahasiswa / Ketua Kelompok] |
-| **Tanggal Mulai** | 27 Maret 2026 |
-| **Target Selesai** | [Sesuaikan dengan deadline mata kuliah] |
-| **Versi Dokumen** | 1.0 |
-| **Status** | Draft |
+| 24/537757/PA/22793 | Andra Kusnaedi Ilyaz |
+| 24/533487/PA/22582 | Azhar Maulana |
+| 24/539383/PA/22903 | Bobby Rahman Hartanto |
+| 24/533395/PA/22573 | Kukuh Agus Hermawan |
+| 24/545406/PA/23176 | Rayhan Haldi Hermawan |
+
 
 ---
 
-## 2.0 Latar Belakang & Permasalahan
+## 2.0 Latar Belakang & Rumusan Masalah
 
 ### 2.1 Latar Belakang
 
-Laptop merupakan perangkat komputasi yang banyak digunakan di kalangan mahasiswa, pekerja, dan masyarakat umum. Seiring intensitas penggunaan yang tinggi, kerusakan pada laptop menjadi hal yang tidak terhindarkan. Namun, tidak semua pengguna memiliki pengetahuan teknis yang memadai untuk mengidentifikasi jenis kerusakan yang dialami.
+Diagnosis kerusakan laptop tidak selalu dapat diputuskan secara pasti karena
+gejala yang diberikan pengguna sering tidak lengkap, samar, atau tingkat keyakinan-
+nya berbeda-beda. Oleh sebab itu, rancangan laporan ini dibuat menggunakan model
+backward chaining dengan menambahkan certainty factor agar sistem masih dapat
+memberikan kesimpulan yang valid meskipun tidak semua rule terpenuhi.
 
-Proses diagnosis kerusakan laptop secara konvensional memerlukan keahlian seorang teknisi berpengalaman, yang belum tentu selalu tersedia — terutama di daerah dengan keterbatasan akses layanan servis. Di sisi lain, perkembangan teknologi kecerdasan buatan, khususnya **Sistem Pakar (Expert System)**, memungkinkan pengetahuan seorang pakar untuk dikodifikasi dan diakses oleh pengguna awam melalui antarmuka yang sederhana.
+Versi deterministik memiliki keterbatasan karena suatu hipotesis baru dapat
+dinyatakan benar apabila seluruh premisnya terpenuhi. Dalam praktiknya, kondi-
+si tersebut tidak selalu terjadi, sebab pengguna sering kali hanya memiliki tingkat
+keyakinan parsial terhadap gejala yang dialami. Oleh karena itu, sistem dirancang
+agar mampu menerima derajat keyakinan pada setiap gejala dan mengolahnya men-
+jadi tingkat keyakinan terhadap hipotesis yang diuji. Dengan pendekatan ini, hasil
+diagnosis tidak hanya berupa satu keputusan yang bersifat mutlak, tetapi juga dapat
+menampilkan beberapa hipotesis lain beserta nilai Certainty Factor tertinggi sebagai
+dasar penentuan kesimpulan utama.
 
-### 2.2 Permasalahan
 
-1. **Keterbatasan akses terhadap teknisi laptop** — Pengguna awam kesulitan mendiagnosis kerusakan laptop secara mandiri.
-2. **Diagnosis awal yang tidak akurat** — Tanpa panduan terstruktur, pengguna sering salah mengidentifikasi penyebab kerusakan, yang berpotensi memperburuk kondisi perangkat.
-3. **Biaya servis yang tidak efisien** — Ketidaktahuan pengguna terhadap jenis kerusakan menyebabkan biaya perbaikan membengkak karena trial-and-error.
-4. **Kebutuhan sistem cerdas yang transparan** — Sistem diagnosis perlu mampu menjelaskan logika di balik kesimpulannya (Explanation Facility), bukan sekadar memberikan output.
-
----
-
-## 3.0 Tujuan & Manfaat Sistem
-
-### 3.1 Tujuan
-
-1. Membangun prototype sistem pakar berbasis web yang mampu mendiagnosis **10 jenis kerusakan laptop** berdasarkan **25 gejala** menggunakan pendekatan **Backward Chaining**.
-2. Mengimplementasikan representasi pengetahuan **hybrid (Rule-Frame)** untuk memisahkan data faktual (Frame) dari logika inferensi (Rule).
-3. Menerapkan metode **Certainty Factor (CF)** untuk menghitung tingkat keyakinan diagnosis.
-4. Menyediakan **Explanation Facility** yang mencakup fasilitas "Mengapa" (Why) dan "Bagaimana" (How) pada setiap proses konsultasi.
-5. Menyediakan **visualisasi pohon inferensi** sebagai representasi visual proses pengambilan keputusan.
-
-### 3.2 Manfaat
-
-| Untuk | Manfaat |
-|---|---|
-| **Pengguna Awam** | Mendapatkan diagnosis awal kerusakan laptop secara mandiri, cepat, dan transparan |
-| **Teknisi Pemula** | Referensi terstruktur untuk mempercepat identifikasi masalah |
-| **Akademik** | Demonstrasi implementasi nyata konsep Sistem Pakar (Backward Chaining, CF, Explanation Facility) |
-| **Institusi** | Prototype yang dapat dikembangkan lebih lanjut sebagai layanan bantuan teknis |
+### 2.2 Rumusan Masalah
+Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam pro-
+yek ini adalah sebagai berikut:
+1. Bagaimana sistem pakar diagnosis kerusakan laptop yang baik?
+2. Apa saja gejala, penyebab kerusakan, dan solusi perbaikan laptop yang bisa
+dirumuskan ke dalam sistem pakar?
+3. Bagaimana penerapan backward chaining untuk proses diagnosis berbasis goal?
+4. Bagaimana implementasi certainty factor agar sistem dapat menangani ketidakpastian?
+5. Bagaimana kesediaan explanation facility untuk pengguna?
 
 ---
+
+## 3.0 Tujuan 
+1. Membangun prototipe sistem pakar diagnosis kerusakan lapto
+2. Mengidentifikasi gejala, penyebab kerusakan, dan solusi perbaikan laptop yang
+bisa dirumuskan ke dalam sistem pakar.
+3. Menerapkan backward chaining untuk proses diagnosis berbasis goal.
+4. Menambahkan certainty factor agar sistem dapat menangani ketidakpastian
+5. Menyediakan explanation facility yang menjelaskan why dan how, termasuk
+perhitungan CF.
 
 ## 4.0 Ruang Lingkup (Scope)
 
@@ -96,7 +99,6 @@ Proses diagnosis kerusakan laptop secara konvensional memerlukan keahlian seoran
 | **Dosen Pengampu** | Product Owner / Evaluator | Menentukan requirement, menilai hasil akhir |
 | **Mahasiswa / Tim** | Developer & Analyst | Analisis, desain, implementasi, testing, dokumentasi |
 | **Pengguna Target** | End User (simulasi) | Menguji coba konsultasi diagnosis saat demo |
-| **Asisten Dosen** | Reviewer (opsional) | Review teknis, feedback kualitas kode |
 
 ---
 
@@ -107,7 +109,6 @@ Proses diagnosis kerusakan laptop secara konvensional memerlukan keahlian seoran
 1. Basis pengetahuan (10 kerusakan, 25 gejala, 12 rule, bobot CF) dianggap **valid dan representatif** untuk kebutuhan prototype akademik.
 2. Pengguna mampu memahami dan menjawab pertanyaan gejala dengan **jujur** sesuai kondisi laptop.
 3. Lingkungan pengembangan dan demo memiliki **Python 3.8+** dan koneksi internet untuk instalasi dependency awal.
-4. Sistem cukup berjalan di **localhost** tanpa memerlukan deployment cloud.
 5. Skala CF User (5 level) dianggap cukup granular untuk menangkap tingkat keyakinan pengguna.
 
 ### 6.2 Kendala
@@ -134,34 +135,8 @@ Proses diagnosis kerusakan laptop secara konvensional memerlukan keahlian seoran
 
 ---
 
-## 8.0 Milestone Utama
 
-| No | Milestone | Deliverable | Estimasi |
-|---|---|---|---|
-| M1 | Analisis & Elicitasi Kebutuhan | Dokumen kebutuhan, jawaban klarifikasi | ✅ Selesai |
-| M2 | Project Charter & SRS Draft | Dokumen Project Charter + SRS IEEE 830 | ✅ Selesai |
-| M3 | Desain Arsitektur & Knowledge Base | Implementation Plan, struktur folder, rule base | ✅ Selesai |
-| M4 | Implementasi Knowledge Base | `frames.py`, `rules.py`, `symptoms.py` | Minggu ke-1 |
-| M5 | Implementasi Inference Engine | `backward_chaining.py`, `certainty_factor.py` | Minggu ke-1 |
-| M6 | Implementasi UI Konsultasi | `app.py`, `consultation.py`, `result.py` | Minggu ke-2 |
-| M7 | Implementasi Explanation Facility | Fitur "Mengapa" dan "Bagaimana" | Minggu ke-2 |
-| M8 | Implementasi Visualisasi | Pohon inferensi (Graphviz) | Minggu ke-2 |
-| M9 | Testing & Validasi | Unit test, E2E testing, validasi CF | Minggu ke-3 |
-| M10 | Demo & Presentasi | Prototype berjalan + dokumentasi final | Minggu ke-3 |
 
----
 
-## 9.0 Persetujuan
-
-Dengan menandatangani dokumen ini, pihak-pihak di bawah menyetujui isi Project Charter dan memberikan otorisasi untuk memulai pelaksanaan proyek.
-
-| Peran | Nama | Tanda Tangan | Tanggal |
-|---|---|---|---|
-| **Dosen Pengampu / Pembimbing** | _________________________ | _____________ | ____/____/2026 |
-| **Ketua Tim / Manajer Proyek** | _________________________ | _____________ | ____/____/2026 |
-| **Anggota Tim 1** | _________________________ | _____________ | ____/____/2026 |
-| **Anggota Tim 2** | _________________________ | _____________ | ____/____/2026 |
-
----
 
 > *Dokumen ini merupakan Project Charter resmi untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

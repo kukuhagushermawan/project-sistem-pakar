@@ -8,8 +8,8 @@
 |---|---|
 | **Versi** | 1.0 |
 | **Tanggal** | 27 Maret 2026 |
-| **Status** | Draft |
-| **Disusun oleh** | [Nama Mahasiswa / Tim] |
+| **Status** | Final |
+| **Disusun oleh** | Kelompok 3 |
 
 ---
 
@@ -19,10 +19,7 @@
 
 Dokumen Software Requirements Specification (SRS) ini bertujuan untuk mendefinisikan secara lengkap dan terstruktur seluruh kebutuhan fungsional serta non-fungsional dari **Sistem Pakar Diagnosis Kerusakan Laptop (Laptop Diagnostic Expert)**. Dokumen ini menjadi acuan utama bagi tim pengembang dalam melakukan perancangan, implementasi, dan pengujian sistem.
 
-Dokumen ini ditujukan untuk:
-- **Tim pengembang** — sebagai panduan teknis implementasi.
-- **Dosen pengampu** — sebagai bahan evaluasi akademik.
-- **Penguji** — sebagai dasar skenario pengujian.
+Dokumen ini ditujukan untuk memenuhi tugas Sistem Pakar.
 
 ### 1.2 Ruang Lingkup Produk
 
