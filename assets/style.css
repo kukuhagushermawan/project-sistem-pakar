@@ -440,12 +440,51 @@ button[kind="secondary"]:hover {
 }
 
 /* ── Sembunyikan Anchor Link Streamlit pada Header ────────── */
+
+/* Selector universal — sembunyikan anchor link di semua heading */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Selector spesifik Streamlit (versi lama & baru) */
 .stMarkdownContainer h1 a,
 .stMarkdownContainer h2 a,
 .stMarkdownContainer h3 a,
 .stMarkdownContainer h4 a,
 .stMarkdownContainer h5 a,
 .stMarkdownContainer h6 a,
-.header-anchor {
+[data-testid="stMarkdownContainer"] h1 a,
+[data-testid="stMarkdownContainer"] h2 a,
+[data-testid="stMarkdownContainer"] h3 a,
+[data-testid="stMarkdownContainer"] h4 a,
+[data-testid="stMarkdownContainer"] h5 a,
+[data-testid="stMarkdownContainer"] h6 a {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+}
+
+/* Class anchor bawaan Streamlit */
+.header-anchor,
+a.header-anchor,
+.stHeadingContainer a,
+[data-testid="stHeadingContainer"] a,
+.stHeading a {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Sembunyikan ikon link SVG di dalam heading */
+h1 a svg, h2 a svg, h3 a svg,
+h4 a svg, h5 a svg, h6 a svg {
     display: none !important;
 }
