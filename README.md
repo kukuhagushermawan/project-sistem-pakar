@@ -1,5 +1,12 @@
 # Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop
 
+## Anggota Kelompok
+1. Andra Kusnaedi Ilyaz (24/537757/PA/22793)
+2. Azhar Maulana (24/533487/PA/22582)
+3. Bobby Rahman Hartanto (24/539383/PA/22903)
+4. Kukuh Agus Hermawan (24/533395/PA/22573)
+5. Rayhan Haldi Hermawan (24/545406/PA/23176)
+
 Prototype sistem pakar berbasis web yang mendiagnosis kerusakan laptop melalui konsultasi interaktif menggunakan **Backward Chaining** dan **Certainty Factor**.
 
 ## Fitur Utama
