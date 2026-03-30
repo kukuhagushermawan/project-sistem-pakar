@@ -1,5 +1,5 @@
 # ============================================================
-# LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop
+# Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop
 # Dependencies
 # ============================================================
 

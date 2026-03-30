@@ -20,7 +20,7 @@ from knowledge_base import (
 )
 from .certainty_factor import CertaintyFactor, _validate_cf
 
-logger = logging.getLogger("laptopdoc.engine.bc")
+logger = logging.getLogger("laptop_diagnostic_expert.engine.bc")
 
 
 # ============================================================

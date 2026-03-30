@@ -1,6 +1,6 @@
 # ============================================================
 # config.py
-# Konfigurasi umum LaptopDoc — konvensi & logging
+# Konfigurasi umum Laptop Diagnostic Expert — konvensi & logging
 # ============================================================
 
 import logging
@@ -10,7 +10,7 @@ import sys
 # KONFIGURASI APLIKASI
 # ============================================================
 
-APP_NAME = "LaptopDoc"
+APP_NAME = "Laptop Diagnostic Expert"
 APP_VERSION = "1.0.0"
 APP_DESCRIPTION = "Sistem Pakar Diagnosis Kerusakan Laptop"
 
@@ -35,11 +35,11 @@ CF_LABELS = {
 # Explanation Facility saat Backward Chaining berjalan.
 #
 # Logger hierarchy:
-#   laptopdoc                    → root logger aplikasi
-#   laptopdoc.engine.bc          → Backward Chaining engine
-#   laptopdoc.engine.cf          → Certainty Factor calculator
-#   laptopdoc.engine.explanation → Explanation Facility
-#   laptopdoc.ui                 → Streamlit UI layer
+#   laptop_diagnostic_expert                    → root logger aplikasi
+#   laptop_diagnostic_expert.engine.bc          → Backward Chaining engine
+#   laptop_diagnostic_expert.engine.cf          → Certainty Factor calculator
+#   laptop_diagnostic_expert.engine.explanation → Explanation Facility
+#   laptop_diagnostic_expert.ui                 → Streamlit UI layer
 #
 # Format log:
 #   [2026-03-28 17:00:05] [INFO ] [engine.bc] Hipotesis K01 TERBUKTI (CF=0.90)
@@ -48,7 +48,7 @@ CF_LABELS = {
 
 def setup_logging(level: str = "INFO") -> None:
     """
-    Inisialisasi logging untuk seluruh aplikasi LaptopDoc.
+    Inisialisasi logging untuk seluruh aplikasi Laptop Diagnostic Expert.
 
     Args:
         level: Level logging (DEBUG/INFO/WARNING/ERROR).
@@ -61,7 +61,7 @@ def setup_logging(level: str = "INFO") -> None:
     date_format = "%Y-%m-%d %H:%M:%S"
 
     # Root logger aplikasi
-    root_logger = logging.getLogger("laptopdoc")
+    root_logger = logging.getLogger("laptop_diagnostic_expert")
     root_logger.setLevel(getattr(logging, level.upper(), logging.INFO))
 
     # Console handler

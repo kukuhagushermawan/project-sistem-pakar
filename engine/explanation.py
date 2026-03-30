@@ -6,7 +6,7 @@
 import logging
 from knowledge_base import get_frame, get_symptom
 
-logger = logging.getLogger("laptopdoc.engine.explanation")
+logger = logging.getLogger("laptop_diagnostic_expert.engine.explanation")
 
 
 class ExplanationFacility:

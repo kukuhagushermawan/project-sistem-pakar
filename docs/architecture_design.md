@@ -1,5 +1,5 @@
 # DOKUMEN ARSITEKTUR SISTEM (SDD)
-## Sistem Pakar Diagnosis Kerusakan Laptop — LaptopDoc
+## Sistem Pakar Diagnosis Kerusakan Laptop — Laptop Diagnostic Expert
 ### Software Design Description — IEEE 1016
 
 **Standar Acuan:** IEEE Std 1016-2009 (IEEE Standard for Information Technology — Systems Design — Software Design Descriptions)
@@ -17,7 +17,7 @@
 
 ### 1.1 Pola Arsitektur: Layered Architecture (3-Tier)
 
-Sistem LaptopDoc mengadopsi pola **Layered Architecture** (Arsitektur Berlapis) dengan 3 lapisan utama yang memisahkan tanggung jawab secara vertikal:
+Sistem Laptop Diagnostic Expert mengadopsi pola **Layered Architecture** (Arsitektur Berlapis) dengan 3 lapisan utama yang memisahkan tanggung jawab secara vertikal:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -520,7 +520,7 @@ graphviz>=0.20        # Visualisasi pohon inferensi
 ║                                                                         ║
 ║  Tanggal  : 28 Maret 2026                                              ║
 ║  Status   : ACCEPTED                                                    ║
-║  Pembuat  : Tim Pengembang LaptopDoc                                    ║
+║  Pembuat  : Tim Pengembang Laptop Diagnostic Expert                     ║
 ║                                                                         ║
 ╠═════════════════════════════════════════════════════════════════════════╣
 ║                                                                         ║
@@ -528,8 +528,8 @@ graphviz>=0.20        # Visualisasi pohon inferensi
 ║  ═════════                                                              ║
 ║                                                                         ║
 ║  Explanation Facility adalah komponen vital dalam Sistem Pakar yang     ║
-║  membedakannya dari black-box AI. LaptopDoc memerlukan dua jenis       ║
-║  penjelasan:                                                            ║
+║  membedakannya dari black-box AI. Laptop Diagnostic Expert memerlukan  ║
+║  dua jenis penjelasan:                                                  ║
 ║                                                                         ║
 ║  • "Mengapa" (Why) — Menjawab: Mengapa sistem bertanya gejala ini?     ║
 ║    Harus tersedia SAAT konsultasi berlangsung (per pertanyaan).         ║
@@ -717,4 +717,4 @@ graphviz>=0.20        # Visualisasi pohon inferensi
 
 ---
 
-> *Dokumen Software Design Description ini disusun berdasarkan standar IEEE 1016-2009 untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*
+> *Dokumen Software Design Description ini disusun berdasarkan standar IEEE 1016-2009 untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

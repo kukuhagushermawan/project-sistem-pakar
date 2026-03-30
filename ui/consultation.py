@@ -2,7 +2,7 @@
 # ui/consultation.py
 # @module  : ui.consultation
 # @desc    : Halaman Konsultasi Wizard — step-by-step diagnosis
-# @author  : Tim Pengembang LaptopDoc
+# @author  : Tim Pengembang Laptop Diagnostic Expert
 # @date    : 2026-03-28
 # @version : 1.0.0
 # ============================================================

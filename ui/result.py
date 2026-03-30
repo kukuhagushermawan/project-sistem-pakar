@@ -3,7 +3,7 @@
 # @module  : ui.result
 # @desc    : Halaman Hasil Diagnosis — ranking, solusi,
 #            Explanation Facility (How), dan pohon inferensi
-# @author  : Tim Pengembang LaptopDoc
+# @author  : Tim Pengembang Laptop Diagnostic Expert
 # @date    : 2026-03-28
 # @version : 1.0.0
 # ============================================================

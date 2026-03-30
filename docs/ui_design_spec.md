@@ -1,5 +1,5 @@
 # SPESIFIKASI DESAIN ANTARMUKA (UI Design Specification)
-## Sistem Pakar Diagnosis Kerusakan Laptop — LaptopDoc
+## Sistem Pakar Diagnosis Kerusakan Laptop — Laptop Diagnostic Expert
 ### Standar Aksesibilitas: WCAG 2.1 Level AA
 
 | Item | Detail |
@@ -219,7 +219,7 @@ Semua ikon menggunakan **Lucide Icons** (open-source, MIT license) — gaya outl
 ### 2.1 Hierarki Halaman
 
 ```
-LaptopDoc (Root)
+Laptop Diagnostic Expert (Root)
 │
 ├── [1] Halaman Beranda (/home)
 │       ├── Hero section: judul + deskripsi
@@ -253,7 +253,7 @@ LaptopDoc (Root)
 ┌──────────────────┐
 │    SIDEBAR        │
 │                   │
-│  LaptopDoc        │
+│  Laptop Diagnostic Expert  │
 │  ─────────        │
 │                   │
 │  [home] Beranda       │
@@ -494,7 +494,7 @@ START
 
 ```
 ┌──────────────────────┐
-│ [≡]  LaptopDoc       │  ← Hamburger menu
+│ [≡]  Laptop Diagnostic Expert  │  ← Hamburger menu
 ├──────────────────────┤
 │                      │
 │ Evaluasi: K04        │
@@ -540,4 +540,4 @@ START
 
 ---
 
-> *Dokumen UI Design Specification disusun berdasarkan standar WCAG 2.1 Level AA untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*
+> *Dokumen UI Design Specification disusun berdasarkan standar WCAG 2.1 Level AA untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

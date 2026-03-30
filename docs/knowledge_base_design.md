@@ -1,5 +1,5 @@
 # DOKUMEN DESAIN BASIS PENGETAHUAN
-## Sistem Pakar Diagnosis Kerusakan Laptop — LaptopDoc
+## Sistem Pakar Diagnosis Kerusakan Laptop — Laptop Diagnostic Expert
 ### Knowledge Representation & Data Architecture
 
 **Standar Acuan:** ISO/IEC 9075 (SQL Standard) — Adaptasi untuk Knowledge Base Sistem Pakar
@@ -17,7 +17,7 @@
 
 ### 1.1 Identifikasi Entitas
 
-Sistem pakar LaptopDoc memiliki **4 entitas utama** yang merepresentasikan komponen Knowledge Base:
+Sistem pakar Laptop Diagnostic Expert memiliki **4 entitas utama** yang merepresentasikan komponen Knowledge Base:
 
 | No | Entitas | Peran dalam Sistem Pakar | Jumlah Record |
 |---|---|---|---|
@@ -304,7 +304,7 @@ Meskipun implementasi menggunakan Python Dictionary, DDL berikut disediakan seba
 
 ```sql
 -- ============================================================
--- DDL: LaptopDoc Knowledge Base
+-- DDL: Laptop Diagnostic Expert Knowledge Base
 -- Standar: ISO/IEC 9075 (SQL:2016)
 -- Catatan: DDL referensi akademik, implementasi via Python Dict
 -- ============================================================
@@ -401,7 +401,7 @@ Schema berikut mendefinisikan struktur data yang diimplementasikan dalam kode Py
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "laptopdoc/frame_kerusakan",
+  "$id": "laptop_diagnostic_expert/frame_kerusakan",
   "title": "Frame Kerusakan Laptop",
   "description": "Schema untuk representasi Frame (slot-based) kerusakan laptop K01-K10",
   "type": "object",
@@ -489,7 +489,7 @@ FRAMES = {
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "laptopdoc/gejala",
+  "$id": "laptop_diagnostic_expert/gejala",
   "title": "Gejala Kerusakan Laptop",
   "description": "Schema untuk data gejala G01-G25 yang ditanyakan ke pengguna",
   "type": "object",
@@ -553,7 +553,7 @@ SYMPTOMS = {
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "laptopdoc/rule",
+  "$id": "laptop_diagnostic_expert/rule",
   "title": "Rule Base Backward Chaining",
   "description": "Schema untuk 12 rule inferensi IF-THEN (R1-R12)",
   "type": "array",
@@ -751,4 +751,4 @@ for rule in RULES:
 
 ---
 
-> *Dokumen ini disusun berdasarkan standar ISO/IEC 9075 yang diadaptasi untuk Knowledge Base Sistem Pakar. Proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*
+> *Dokumen ini disusun berdasarkan standar ISO/IEC 9075 yang diadaptasi untuk Knowledge Base Sistem Pakar. Proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

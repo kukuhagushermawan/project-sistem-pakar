@@ -1,5 +1,5 @@
 # DOKUMEN ANALISIS: UML 2.5
-## Sistem Pakar Diagnosis Kerusakan Laptop — LaptopDoc
+## Sistem Pakar Diagnosis Kerusakan Laptop — Laptop Diagnostic Expert
 ### Pendekatan Hybrid: Rule-Frame & Backward Chaining dengan Certainty Factor
 
 **Standar Acuan:** UML 2.5 (OMG Unified Modeling Language Specification)
@@ -9,7 +9,7 @@
 | **Versi** | 1.0 |
 | **Tanggal** | 28 Maret 2026 |
 | **Status** | Final |
-| **Dokumen Referensi** | SRS LaptopDoc v1.0, Project Charter v1.0 |
+| **Dokumen Referensi** | SRS Laptop Diagnostic Expert v1.0, Project Charter v1.0 |
 
 ---
 
@@ -63,7 +63,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                        SYSTEM BOUNDARY: LaptopDoc                          │
+│                        SYSTEM BOUNDARY: Laptop Diagnostic Expert             │
 │                                                                             │
 │                                                                             │
 │   ┌──────────────────────┐                                                  │
@@ -426,4 +426,4 @@ Matriks ketertelusuran berikut menghubungkan setiap Functional Requirement (FR-x
 
 ---
 
-> *Dokumen UML Analysis ini disusun berdasarkan standar UML 2.5 untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Merujuk pada SRS v1.0 dan Project Charter v1.0. Versi 1.0 — Maret 2026.*
+> *Dokumen UML Analysis ini disusun berdasarkan standar UML 2.5 untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Merujuk pada SRS v1.0 dan Project Charter v1.0. Versi 1.0 — Maret 2026.*

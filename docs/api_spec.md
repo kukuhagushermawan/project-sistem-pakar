@@ -1,5 +1,5 @@
 # DOKUMENTASI API RESTful — OpenAPI 3.0
-## Sistem Pakar Diagnosis Kerusakan Laptop — LaptopDoc
+## Sistem Pakar Diagnosis Kerusakan Laptop — Laptop Diagnostic Expert
 ### Komunikasi Frontend UI ↔ Inference Engine Backend
 
 | Item | Detail |
@@ -648,7 +648,7 @@ Log kronologis setiap langkah inferensi engine — untuk debugging, audit, dan E
 
 ## 7. Catatan Implementasi untuk Streamlit
 
-> Karena prototype LaptopDoc menggunakan **Streamlit** (bukan REST API server terpisah), komunikasi Frontend↔Engine terjadi via **function call langsung** (Python import), bukan HTTP request. Dokumentasi API ini berfungsi sebagai:
+> Karena prototype Laptop Diagnostic Expert menggunakan **Streamlit** (bukan REST API server terpisah), komunikasi Frontend↔Engine terjadi via **function call langsung** (Python import), bukan HTTP request. Dokumentasi API ini berfungsi sebagai:
 >
 > 1. **Contract specification** — mendefinisikan format data yang dipertukarkan antar layer.
 > 2. **Referensi akademik** — mendemonstrasikan pemahaman desain API RESTful.
@@ -665,4 +665,4 @@ Log kronologis setiap langkah inferensi engine — untuk debugging, audit, dan E
 
 ---
 
-> *Dokumentasi API RESTful disusun berdasarkan OpenAPI 3.0.3 untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*
+> *Dokumentasi API RESTful disusun berdasarkan OpenAPI 3.0.3 untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

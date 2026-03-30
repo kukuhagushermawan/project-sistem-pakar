@@ -17,7 +17,7 @@
 
 ### 1.1 Tujuan Dokumen
 
-Dokumen Software Requirements Specification (SRS) ini bertujuan untuk mendefinisikan secara lengkap dan terstruktur seluruh kebutuhan fungsional serta non-fungsional dari **Sistem Pakar Diagnosis Kerusakan Laptop (LaptopDoc)**. Dokumen ini menjadi acuan utama bagi tim pengembang dalam melakukan perancangan, implementasi, dan pengujian sistem.
+Dokumen Software Requirements Specification (SRS) ini bertujuan untuk mendefinisikan secara lengkap dan terstruktur seluruh kebutuhan fungsional serta non-fungsional dari **Sistem Pakar Diagnosis Kerusakan Laptop (Laptop Diagnostic Expert)**. Dokumen ini menjadi acuan utama bagi tim pengembang dalam melakukan perancangan, implementasi, dan pengujian sistem.
 
 Dokumen ini ditujukan untuk:
 - **Tim pengembang** — sebagai panduan teknis implementasi.
@@ -26,7 +26,7 @@ Dokumen ini ditujukan untuk:
 
 ### 1.2 Ruang Lingkup Produk
 
-**LaptopDoc** adalah prototype sistem pakar berbasis web yang mampu mendiagnosis kerusakan laptop melalui konsultasi interaktif. Sistem meliputi:
+**Laptop Diagnostic Expert** adalah prototype sistem pakar berbasis web yang mampu mendiagnosis kerusakan laptop melalui konsultasi interaktif. Sistem meliputi:
 
 - **10 jenis kerusakan** laptop (K01-K10) yang terstruktur dalam Frame.
 - **25 gejala** (G01-G25) yang ditanyakan secara step-by-step.
@@ -74,7 +74,7 @@ Sistem berjalan pada platform web (Streamlit/Python) dan diakses melalui browser
 
 ### 2.1 Perspektif Produk
 
-LaptopDoc merupakan sistem **standalone** yang berdiri sendiri tanpa integrasi ke sistem eksternal. Sistem beroperasi sebagai aplikasi web lokal menggunakan framework Streamlit (Python).
+Laptop Diagnostic Expert merupakan sistem **standalone** yang berdiri sendiri tanpa integrasi ke sistem eksternal. Sistem beroperasi sebagai aplikasi web lokal menggunakan framework Streamlit (Python).
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -392,4 +392,4 @@ Sistem berkomunikasi melalui **protokol HTTP** pada `localhost:8501` (port defau
 
 ---
 
-> *Dokumen SRS ini disusun berdasarkan standar IEEE 830-1998 untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*
+> *Dokumen SRS ini disusun berdasarkan standar IEEE 830-1998 untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

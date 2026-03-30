@@ -1,10 +1,10 @@
 # ============================================================
 # app.py
 # @module  : app
-# @desc    : Entry point Streamlit — LaptopDoc Sistem Pakar
+# @desc    : Entry point Streamlit — Laptop Diagnostic Expert Sistem Pakar
 #            Diagnosis Kerusakan Laptop. Mengelola routing
 #            halaman dan session state global.
-# @author  : Tim Pengembang LaptopDoc
+# @author  : Tim Pengembang Laptop Diagnostic Expert
 # @date    : 2026-03-28
 # @version : 1.0.0
 #

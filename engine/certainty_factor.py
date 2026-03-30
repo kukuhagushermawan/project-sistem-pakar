@@ -10,7 +10,7 @@
 
 import logging
 
-logger = logging.getLogger("laptopdoc.engine.cf")
+logger = logging.getLogger("laptop_diagnostic_expert.engine.cf")
 
 
 def _validate_cf(value: float, name: str = "CF") -> None:

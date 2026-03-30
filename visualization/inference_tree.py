@@ -8,7 +8,7 @@
 import streamlit as st
 import logging
 
-logger = logging.getLogger("laptopdoc.visualization")
+logger = logging.getLogger("laptop_diagnostic_expert.visualization")
 
 # Warna node sesuai UI Design Spec (Bright Dark Mode)
 COLORS = {

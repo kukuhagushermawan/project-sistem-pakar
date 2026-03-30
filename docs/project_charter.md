@@ -8,7 +8,7 @@
 
 | Item | Detail |
 |---|---|
-| **Nama Proyek** | LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop |
+| **Nama Proyek** | Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop |
 | **Kode Proyek** | SP-LAPTOP-2026 |
 | **Klien/Lembaga** | Program Studi Teknik Informatika — Mata Kuliah Sistem Pakar |
 | **Jenis Proyek** | Proyek Akademik (Prototype) |
@@ -164,4 +164,4 @@ Dengan menandatangani dokumen ini, pihak-pihak di bawah menyetujui isi Project C
 
 ---
 
-> *Dokumen ini merupakan Project Charter resmi untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*
+> *Dokumen ini merupakan Project Charter resmi untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Versi 1.0 — Maret 2026.*

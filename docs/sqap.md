@@ -1,5 +1,5 @@
 # SOFTWARE QUALITY ASSURANCE PLAN (SQAP)
-## Sistem Pakar Diagnosis Kerusakan Laptop — LaptopDoc
+## Sistem Pakar Diagnosis Kerusakan Laptop — Laptop Diagnostic Expert
 ### Pengujian Fungsionalitas Web & Akurasi Inference Engine
 
 **Standar Acuan:** IEEE Std 730-2014 (IEEE Standard for Software Quality Assurance Processes)
@@ -19,7 +19,7 @@
 
 Dokumen Software Quality Assurance Plan (SQAP) ini bertujuan untuk:
 
-1. **Mendefinisikan proses penjaminan kualitas** yang sistematis dan terukur untuk seluruh siklus pengembangan sistem pakar LaptopDoc.
+1. **Mendefinisikan proses penjaminan kualitas** yang sistematis dan terukur untuk seluruh siklus pengembangan sistem pakar Laptop Diagnostic Expert.
 2. **Menjamin kebenaran logika inferensi** — memastikan Backward Chaining Engine mengevaluasi hipotesis secara goal-driven tanpa infinite loop, deadlock, atau missing path.
 3. **Memvalidasi akurasi kalkulasi Certainty Factor** — memverifikasi bahwa formula `CF_final = CF_pakar × CF_user_kombinasi` dan `CF_combine(CF1, CF2) = CF1 + CF2 × (1 - CF1)` menghasilkan nilai yang benar secara matematis.
 4. **Memastikan integritas Knowledge Base** — memverifikasi bahwa 10 Frame, 25 Gejala, dan 12 Rule saling konsisten, tidak ada orphan, dan tidak ada kontradiksi antar rule.
@@ -31,7 +31,7 @@ SQAP ini mencakup **dua domain pengujian** yang berjalan secara paralel:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│                    RUANG LINGKUP SQA LaptopDoc                      │
+│                    RUANG LINGKUP SQA Laptop Diagnostic Expert           │
 │                                                                      │
 │  ┌──────────────────────────────────────────────────────┐           │
 │  │  DOMAIN 1: Pengujian Fungsionalitas UI Web           │           │
@@ -375,7 +375,7 @@ pytest tests/test_knowledge_base.py -v
 
 ### 5.2 Kategori Severity
 
-| Level | Severity | Deskripsi | Contoh pada LaptopDoc | SLA Perbaikan |
+| Level | Severity | Deskripsi | Contoh pada Laptop Diagnostic Expert | SLA Perbaikan |
 |---|---|---|---|---|
 | **S1** | **Critical** | Sistem crash / data loss / hasil diagnosis salah total | Backward Chaining infinite loop; CF final selalu 0.0 meskipun semua gejala terpenuhi | **< 4 jam** |
 | **S2** | **High** | Fitur utama tidak berfungsi | Tombol "Mengapa?" tidak menampilkan penjelasan; ranking diagnosis tidak sorted; shared symptom ditanyakan ulang | **< 8 jam** |
@@ -500,7 +500,7 @@ B├────────────┼────────────�
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
-║                  QUALITY METRICS DASHBOARD — LaptopDoc              ║
+║                  QUALITY METRICS DASHBOARD — Laptop Diagnostic Expert   ║
 ║                  Snapshot: [Tanggal]                                ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
@@ -560,4 +560,4 @@ B├────────────┼────────────�
 
 ---
 
-> *Dokumen SQAP ini disusun berdasarkan standar IEEE 730-2014 untuk proyek LaptopDoc — Sistem Pakar Diagnosis Kerusakan Laptop. Quality Gates disesuaikan untuk mencakup validasi komponen Sistem Pakar (Knowledge Base, Inference Engine, Certainty Factor). Versi 1.0 — Maret 2026.*
+> *Dokumen SQAP ini disusun berdasarkan standar IEEE 730-2014 untuk proyek Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop. Quality Gates disesuaikan untuk mencakup validasi komponen Sistem Pakar (Knowledge Base, Inference Engine, Certainty Factor). Versi 1.0 — Maret 2026.*
