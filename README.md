@@ -1,12 +1,5 @@
 # Laptop Diagnostic Expert — Sistem Pakar Diagnosis Kerusakan Laptop
 
-## Anggota Kelompok
-1. Andra Kusnaedi Ilyaz (24/537757/PA/22793)
-2. Azhar Maulana (24/533487/PA/22582)
-3. Bobby Rahman Hartanto (24/539383/PA/22903)
-4. Kukuh Agus Hermawan (24/533395/PA/22573)
-5. Rayhan Haldi Hermawan (24/545406/PA/23176)
-
 Prototype sistem pakar berbasis web yang mendiagnosis kerusakan laptop melalui konsultasi interaktif menggunakan **Backward Chaining** dan **Certainty Factor**.
 
 ## Fitur Utama
@@ -155,6 +148,20 @@ Project-Sistem-Pakar/
 | [SQAP](docs/sqap.md) | IEEE 730 |
 | [UI Design](docs/ui_design_spec.md) | WCAG 2.1 |
 | [API Spec](docs/api_spec.md) | OpenAPI 3.0 |
+
+---
+
+## Tim Pengembang
+
+Proyek ini dikembangkan oleh kelompok mahasiswa Ilmu Komputer UGM:
+
+| NIM | Nama |
+|---|---|
+| 24/537757/PA/22793 | Andra Kusnaedi Ilyaz |
+| 24/533487/PA/22582 | Azhar Maulana |
+| 24/539383/PA/22903 | Bobby Rahman Hartanto |
+| 24/533395/PA/22573 | Kukuh Agus Hermawan |
+| 24/545406/PA/23176 | Rayhan Haldi Hermawan |
 
 ---
 
